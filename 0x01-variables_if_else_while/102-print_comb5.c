@@ -11,7 +11,7 @@
 
 int main(void)
 {
-	int firstDigit = 0, SeconDigit;
+	int firstDigit = 0, seconDigit;
 
 	while (firstDigit <= 99)
 	{
