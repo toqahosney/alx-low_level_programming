@@ -1,10 +1,13 @@
 #include "main.h"
 
-/** times_table - prints the 9 times table
+/**
+ * times_table - prints the 9 times table
  *
- * Example table
- * 0, 0, 0, 0, ,,
- * 0, 1, 2, 3, ,,
+ * Example table:
+ * 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+ * 0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
+ * ...
+ * (Continues with the entire 9 times table)
 */
 
 void times_table(void)
