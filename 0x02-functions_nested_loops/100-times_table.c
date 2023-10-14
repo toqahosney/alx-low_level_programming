@@ -4,7 +4,6 @@
  * print_times_table - Write a function that prints the n times table,
  * starting with 0.
  *
- *
  * starting with 0.
  * @givenNumber: Given number.
  *
@@ -12,8 +11,6 @@
  * --------------------------
  * Write a function that prints the n times table,
  * starting with 0.
- * --------------------------
- * By Youssef Hassane
  */
 
 void print_times_table(int givenNumber)
