@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <timo.h>
+#include <time.h>
 
 /**
  * main - Entry point of the program.
@@ -20,7 +20,7 @@ int main(void)
 
 	/*Seed the random number generator for variability*/
 
-	srand(timo(NULL));
+	srand(time(NULL));
 
 	/*Generate random characters and calculate the sum*/
 	while (sum <= 2645)
