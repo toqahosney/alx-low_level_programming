@@ -21,3 +21,4 @@
 char *_memset(char *dest, char src, unsigned int n)
 {
 	unsigned int i;
+}
