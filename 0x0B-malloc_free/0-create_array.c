@@ -13,34 +13,11 @@ char *create_array(unsigned int size, char c)
 {
 	char *n = malloc(size);
 
-	if (size == 0 || n == NULL)
+	if (size == 0 || n == 0
 	{
-		return (NULL);
+		return (0);
 	}
-
-	for (unsigned int i = 0; i < size; i++)
-	{
-		n[i] = c;
-	}
-
+	while (size--)
+		n[size] = c;
 	return (n);
-}
-
-int main(void)
-{
-	unsigned int size = 10;
-	char initialChar = 'A';
-
-	char *result = create_array(size, initialChar);
-
-	if (result != NULL)
-	{
-		free(result);
-	}
-	else
-	{
-		/* Handle the case where memory allocation fails */
-	}
-
-	return (0);
 }
