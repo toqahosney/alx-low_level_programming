@@ -11,12 +11,12 @@
  */
 char *argstostr(int ac, char **av)
 {
-	if (ac == 0 || av == NULL)
-		return (NULL);
-
 	int total_length = 0;
 	int i, j, k;
 	char *result;
+
+	if (ac == 0 || av == NULL)
+		return (NULL);
 
 	for (i = 0; i < ac; i++)
 		total_length += (strlen(av[i]) + 1); /*+1 for the '\n'*/
