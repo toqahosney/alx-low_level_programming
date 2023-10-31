@@ -1,7 +1,6 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-#include "main.h"
 
 /**
  * argstostr - Concatenates all the arguments of the program with '\n'.
@@ -12,16 +11,18 @@
  */
 char *argstostr(int ac, char **av)
 {
+	if (ac == 0 || av == NULL)
+		return (NULL);
+
 	int total_length = 0;
 	int i, j, k;
 	char *result;
 
-	if (ac == 0 || av == NULL)
-		return (NULL);
-
+	/*Calculate the total length needed for the concatenated string.*/
 	for (i = 0; i < ac; i++)
 		total_length += (strlen(av[i]) + 1); /*+1 for the '\n'*/
 
+	/*Allocate memory for the concatenated string.*/
 	result = malloc(total_length * sizeof(char));
 
 	if (result == NULL)
@@ -29,6 +30,7 @@ char *argstostr(int ac, char **av)
 
 	k = 0;
 
+	/*Copy each argument followed by '\n' into the result string.*/
 	for (i = 0; i < ac; i++)
 	{
 		for (j = 0; av[i][j] != '\0'; j++)
@@ -36,11 +38,11 @@ char *argstostr(int ac, char **av)
 			result[k] = av[i][j];
 			k++;
 		}
-		result[k] = '\n';
+		result[k] = '\n'; /*Add '\n' after each argument*/
 		k++;
 	}
 
-	result[k] = '\0';
+	result[k] = '\0'; /*Null-terminate the result string*/
 
 	return (result);
 }
