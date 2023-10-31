@@ -1,11 +1,13 @@
 #include "main.h"
 
 /**
- * alloc_grid - Allocates memory for a 2D grid of integers and initializes it to 0.
+ * alloc_grid - Allocates memory for a 2D grid
+ * of integers and initializes it to 0.
  * @width: The number of columns in the grid.
  * @height: The number of rows in the grid.
  *
- * Return: If allocation is successful, a pointer to the grid. If it fails, NULL.
+ * Return: If allocation is successful,
+ * a pointer to the grid. If it fails, NULL.
  */
 
 int **alloc_grid(int width, int height)
