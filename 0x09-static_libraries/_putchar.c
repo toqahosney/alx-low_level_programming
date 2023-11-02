@@ -21,7 +21,7 @@
  * a new line.
  * Prototype: void print_alphabet(void);
  * You can only use _putchar twice in your code
- * --------------------------
+ * ---------------------
  */
 
 
