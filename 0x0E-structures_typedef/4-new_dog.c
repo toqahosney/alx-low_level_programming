@@ -2,9 +2,9 @@
 #include "dog.h"
 
 /**
- * _strlen - a function that gets a length of string
- * @str: the string to get the length
- * Return: length of @str
+ * _strlen - Calculates the length of a string.
+ * @str: The input string.
+ * Return: The length of the string.
  */
 
 int _strlen(const char *str)
@@ -20,9 +20,10 @@ int _strlen(const char *str)
 }
 
 /**
- * _strcopy - a function that returns @dest with a copy of a string from @stc
- * @src: string to copy
- * @dest: copy string to here
+ * _strcopy - Copies a string from src to dest.
+ * @src: The source string.
+ * @dest: The destination string.
+ * Return: A pointer to dest.
  */
 
 char *_strcopy(char *dest, char *src)
@@ -39,12 +40,12 @@ char *_strcopy(char *dest, char *src)
 }
 
 /**
- * new-dog - a function that creats a new dog
- * @name: dog's name
- * @age: dog's age
- * @owner: owner's name
- * Return: struct pointer dog
- *      Null if function fails
+ * new_dog - Creates a new dog and initializes its fields.
+ * @name: The dog's name.
+ * @age: The dog's age.
+ * @owner: The owner's name.
+ * Return: A pointer to the new dog struct.
+ *			Returns NULL if memory allocation fails.
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
