@@ -6,18 +6,19 @@
 #include <string.h>
 
 /**
- * struct lists_s - signly, linked list
+ * struct lists_s - singly linked list
  * @str: string - (malloc'ed string)
  * @len: length of the string
  * @next: points to the next node
- * Description: signly linked list node structure
+ *
+ * Description: singly linked list node structure
  * for the Holberton project
-*/
+ */
 typedef struct lists_s
 {
 	char *str;
 	unsigned int len;
-	struct list_s *next;
+	struct lists_s *next;
 } list_t;
 
 int _putchar(char c);
