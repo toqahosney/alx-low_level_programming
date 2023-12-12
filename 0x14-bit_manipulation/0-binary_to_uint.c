@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 #include "Logic/Binary_To_Uint_Internal_Logic.c"
 
